@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>Vite App</title>
+</head>
+
+<body class="bg-blue-100 ">
+  <div class="frame-big mt-12 p-2 min-h-screen ">
+    <div class="frame-big gradient  min-h-screen ">
+      <header class="border-b-2 border-t-2 border-gray-200 my-4 py-4">
+        <div class="flex justify-between items-center px-4">
+          <div class="flex items-center space-x-2 font-['Story_Script',_cursive] text-purple-950">
+            <img src="img/logo.png" alt="Logo" class="h-8 w-8">
+            <span class="font-bold text-xl">Cakes to order</span>
+          </div>
+          <nav class="hidden md:flex items-center space-x-8">
+            <a href="#" class="nav-link hover:underline">home</a>
+            <a href="#" class="nav-link hover:underline">catalog</a>
+            <a href="#" class="nav-link hover:underline">about us</a>
+            <a href="#" class="nav-link hover:underline">login</a>
+          </nav>
+          <button id="menuBtn"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border-transparent border-2 hover:border-black hover:border-2"
+            aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <!-- меню на телефоне -->
+        <nav id="mobileMenu" class=" hidden mt-2  px-4">
+          <a href="#" class="block py-2 nav-link ">Home</a>
+          <a href="#" class="block py-2 nav-link ">Catalog</a>
+          <a href="#" class="block py-2 nav-link ">About us</a>
+          <a href="#" class="block py-2 nav-link ">Login</a>
+        </nav>
+      </header>
+      <main class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 px-4">
+        <section class=" w-full max-w-6xl py-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="section-card">
+              <h3 class="section-card-title">Classic</h3>
+              <p class="section-card-text ">Napoleon, honey cake, Prague…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">sponge cakes</h3>
+              <p class="section-card-text">vanilla, red velvet, snickers…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">mousse cakes</h3>
+              <p class="section-card-text">three chocolates, mango…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">fruit cakes</h3>
+              <p class="section-card-text">strawberry, raspberry, cherry…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">yogurt cakes</h3>
+              <p class="section-card-text">banana yogurt, lemon yogurt…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">chocolate cakes</h3>
+              <p class="section-card-text">double chocolate, cherry chocolate…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">cakes for children</h3>
+              <p class="section-card-text">kinder, oreo, gummy…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">fitness cakes</h3>
+              <p class="section-card-text ">bird's milk, curd…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">diabetic cakes</h3>
+              <p class="section-card-text ">vanilla ice cream, napoleon…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">vegan cakes</h3>
+              <p class="section-card-text ">apricot-vanilla, chocolate-banana…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">high protein cakes</h3>
+              <p class="section-card-text ">curd slice, chocolate with…</p>
+            </div>
+            <div class="section-card">
+              <h3 class="section-card-title">hypoallergenic cakes</h3>
+              <p class="section-card-text">raspberry-vanilla, black velvet…</p>
+            </div>
+          </div>
+        </section>
+        <div class=" frame-sm md:justify-self-end max-w-xs md:self-start">
+          <div class=" frame-sm  gradient">
+            <h2 class="text-2xl font-bold mb-6 text-purple-950 uppercase">place an order</h2>
+            <form class="space-y-6">
+              <div class="grid grid-cols-2 gap-4">
+                <div> <label for="firstName" class="form-label">First name</label> <input id="firstName"
+                    name="firstName" type="text" placeholder="First name" class="form-input">
+                </div>
+                <div> <label for="lastName" class="form-label">Last name</label>
+                  <input id="lastName" name="lastName" type="text" placeholder="Last name" class="form-input">
+                </div>
+                <div> <label for="email" class="form-label">Email</label> <input id="email" name="email" type="email"
+                    placeholder="kateyakovenko0@gmail.com" class="form-input">
+                </div>
+                <div> <label for="category" class="form-label">Category</label> <select id="category" name="category"
+                    class="form-input text-black/40">
+                    <option value="" selected>Choose a category</option>
+                    <option value="">Classic</option>
+                    <option value="">Sponge cakes</option>
+                    <option value="">Fruit cakes</option>
+                    <option value="">Mousse cakes</option>
+                    <option value="">Yogurt cakes</option>
+                    <option value="">Chocolate cakes</option>
+                    <option value="">For children</option>
+                    <option value="">Fitness cakes</option>
+                    <option value="">Diabetic cakes</option>
+                    <option value="">Vegan cakes</option>
+                    <option value="">High protein cakes</option>
+                    <option value="">Hypoallergenic </option>
+                  </select> </div>
+                <div class="col-span-2"> <label for="product" class="form-label">Product</label> <select id="product"
+                    name="product" class="form-input text-black/40">
+                    <option value="" selected>Choose a product…</option>
+                    <option value="">Napoleon</option>
+                    <option value="">Double chocolate</option>
+                    <option value="">kinder</option>
+                  </select> </div>
+                <div class="col-span-2"> <label for="comment" class="form-label">Comment</label> <textarea id="comment"
+                    name="comment" rows="5" placeholder="Your wishes…" class="form-input"></textarea>
+                </div>
+              </div>
+              <div> <button type="submit"
+                  class="inline-flex items-center justify-center w-full md:w-auto px-6 py-3 bg-purple-950 text-white ring-2 ring-black font-semibold rounded-lg hover:bg-black hover:ring-purple-950">
+                  Submit order </button> </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="border-1  mx-auto border-gray-300  border-b-transparent rounded-t-3xl  pb-0  bg-white/40 mt-12">
+        <h2 class="text-center font-bold mb-6 mt-3 uppercase">contact us:</h2>
+        <div class="grid grid-cols-3 pb-4 gap-y-6
+            lg:grid-cols-6 justify-items-center max-w-md mx-auto">
+          <i class="fa-brands fa-telegram icon"></i>
+          <i class="fa-brands fa-viber icon"></i>
+          <i class="fa-brands fa-facebook icon"></i>
+          <i class="fa-brands fa-threads icon"></i>
+          <i class="fa-brands fa-twitter icon"></i>
+          <i class="fa-brands fa-instagram icon"></i>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

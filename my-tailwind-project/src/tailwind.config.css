@@ -1,0 +1,27 @@
+/* Tailwind CSS v4 configuration */
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Визначаємо, що темний режим використовує клас dark */
+  --dark-mode: selector;
+
+  /* Extending colors */
+  --color-tomato: tomato;
+
+  /* Extending font family */
+  --font-main: "Roboto", "sans-serif";
+
+  /* Extending font weight */
+  --font-medium: 500;
+
+  /* Налаштування тіней і кольорів для темного режиму */
+  --shadow-slate-400-30: rgb(148 163 184 / 0.3);
+  --shadow-slate-900-30: rgb(15 23 42 / 0.3);
+  --color-black-40: rgb(0 0 0 / 0.4);
+
+  /* Додаткові налаштування для градієнтів */
+  --color-red-800: rgb(153 27 27);
+  --color-blue-950: rgb(23 37 84);
+}
